@@ -589,8 +589,7 @@ footer {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 1fr 380px auto;
-  gap: 2rem;
+  grid-template-columns: 1fr 640px 320px;
   align-items: center;
 }
 #nanobot-stage {
@@ -598,7 +597,7 @@ footer {
   height: 420px;
   position: relative;
   border-radius: 8px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 /* ── ANIME.JS INITIAL STATES ── */

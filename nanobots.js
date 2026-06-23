@@ -8,14 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const stage = document.getElementById('nanobot-stage');
   if (!stage) return;
 
-  const canvas = document.createElement('canvas');
-  Object.assign(canvas.style, {
-    position: 'absolute', top: '0', left: '0',
-    width: '100%', height: '100%',
-    pointerEvents: 'none', display: 'block',
-  });
-  stage.appendChild(canvas);
-  const ctx = canvas.getContext('2d');
+   const canvas = document.createElement('canvas');
+   Object.assign(canvas.style, {
+     position: 'absolute', top: '0', left: '0',
+     width: '100%', height: '100%',
+     pointerEvents: 'none', display: 'block',
+   });
+   stage.appendChild(canvas);
+   const ctx = canvas.getContext('2d');
 
   function resize() {
     canvas.width  = stage.offsetWidth;
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const H  = () => canvas.height;
   const cx = () => W() / 2;
   const cy = () => H() / 2;
-  const R  = () => Math.min(W(), H()) * 0.38;
+  const R  = () => Math.min(W(), H()) * 0.48;
 
   // ── PALETTE ──
   const C = {
